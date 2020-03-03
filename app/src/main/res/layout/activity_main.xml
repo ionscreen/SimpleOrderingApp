@@ -56,7 +56,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
                     android:text="@string/square"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"
+                    android:onClick="showShape"/>
 
                 <RadioButton
                     android:id="@+id/circle"

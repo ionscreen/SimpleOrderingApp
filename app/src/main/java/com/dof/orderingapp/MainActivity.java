@@ -36,22 +36,11 @@ public class MainActivity extends AppCompatActivity {
         btn_reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                message.setText("");
-
-                int selectedID = radioShapeGroup.getCheckedRadioButtonId();
-                radioButton = findViewById(selectedID);
-                radioButtonFlavor = findViewById(selectedID);
-                radioButtonTopping = findViewById(selectedID);
-
-                radioButton.setChecked(false);
-                radioButtonFlavor.setChecked(false);
-                radioButtonTopping.setChecked(false);
-
-
+                finish();
+                startActivity(getIntent());
 
             }
         });
-
 
 
         btn_proceed.setOnClickListener(new View.OnClickListener() {
