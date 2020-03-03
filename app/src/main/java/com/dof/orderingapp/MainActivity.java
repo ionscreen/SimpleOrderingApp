@@ -29,11 +29,7 @@ public class MainActivity extends AppCompatActivity {
         radioShapeGroup = findViewById(R.id.radio);
         radioFlavorGroup = findViewById(R.id.radio2);
         radioToppingsGroup = findViewById(R.id.radio3);
-
-
-
         message = findViewById(R.id.message);
-
         btn_proceed = findViewById(R.id.btn_proceed);
         btn_reset = findViewById(R.id.btn_reset);
 
@@ -52,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 radioButtonTopping.setChecked(false);
 
 
+
             }
         });
 
@@ -68,12 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 int selectedIDToppings = radioToppingsGroup.getCheckedRadioButtonId();
                 radioButtonTopping = findViewById(selectedIDToppings);
 
-
-
-
-
-
-                String dialogMessage = "Your ordered shape is: " + radioButton.getText() +"\n"+
+                String dialogMessage = "Congratulations, You created your Cake! \n\nYour ordered shape is: " + radioButton.getText() +"\n"+
                 "Your Flavor: " + radioButtonFlavor.getText() +"\n"+ "Your Toppings: " + radioButtonTopping.getText()+ "\n" +
                         "Your Message is: " + message.getText();
 
@@ -82,7 +74,8 @@ public class MainActivity extends AppCompatActivity {
                 messageDialog.setPositiveButton("Got it", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-
+                       finish();
+                       startActivity(getIntent());
                     }
                 });
                 AlertDialog dialog = messageDialog.create();
