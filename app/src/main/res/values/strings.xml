@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Ordering App</string>
+    <string name="shape">What shape of your cake?</string>
+    <string name="flavor">What flavor of your cake?</string>
+    <string name="square">Square</string>
+    <string name="circle">Circle</string>
+    <string name="triangle">Triangle</string>
+    <string name="caramel">Caramel</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="custard">Custard</string>
+    <string name="toppings">What toppings of your cake?</string>
+    <string name="candies">Candies</string>
+    <string name="smallcookies">Small Cookies</string>
+    <string name="powderedsugar">Powdered Sugar</string>
+    <string name="txt_message">Message:</string>
+    <string name="btn_proceed">Proceed</string>
+    <string name="btn_reset">Reset</string>
+
+</resources>
